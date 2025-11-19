@@ -1,0 +1,7 @@
+print('--- Calculadora ---')
+print('[ 1 ] – Tabuada')
+print('[ 2 ] – Calculadora')
+print('[ 3 ] – Fatorial')
+print('[ 4 ] – Números primos')
+option = input('-->')
+print('Escolheu a opção', option)

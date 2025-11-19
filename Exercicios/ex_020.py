@@ -1,0 +1,6 @@
+string = input('Digite o seu nome:\n-->').strip()
+print(string.upper())
+print(string.lower())
+print(len(string.replace(' ', '')))
+string_split = string.split()
+print(len(string_split[0]))

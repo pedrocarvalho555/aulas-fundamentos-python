@@ -1,0 +1,12 @@
+valor = int(input('Insira um valor numérico para podermos calcular a tabuada\n-->'))
+
+print(valor, 'x 1 =', valor * 1)
+print(valor, 'x 2 =', valor * 2)
+print(valor, 'x 3 =', valor * 3)
+print(valor, 'x 4 =', valor * 4)
+print(valor, 'x 5 =', valor * 5)
+print(valor, 'x 6 =', valor * 6)
+print(valor, 'x 7 =', valor * 7)
+print(valor, 'x 8 =', valor * 8)
+print(valor, 'x 9 =', valor * 9)
+print(valor, 'x 10 =', valor * 10)

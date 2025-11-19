@@ -1,0 +1,1 @@
+print('Exmo. Sr/a seja bem vindos ao meu nobre e ilustre programa feito em Python')

@@ -1,0 +1,7 @@
+print('Olá parceiro, o meu nome é HTMLBOT, qual é o teu nome?')
+nome = input('-->')
+print('E quantos anos tens', nome,'?')
+idade = input('-->')
+print('Caraças', idade,'anos? Tas velho já, onde é que moras?')
+morada = input('-->')
+print('Mas', morada, 'não fica muito longe? Vai pra casa')
