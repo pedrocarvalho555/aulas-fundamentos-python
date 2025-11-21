@@ -1,5 +1,5 @@
 from random import randint
-from time import sleep
+
 lista = list()
 print('--- SIMULADOR DE INICIATIVA ---')
 num_jogadores = int(input('Quantos jogadores estão na partida?\n-->'))
@@ -11,7 +11,24 @@ for c in range(num_jogadores):
     print(f'O {c+1}º jogador rolou um {iniciativa["Dado"]}')
     lista.append(iniciativa)
 
-for a in lista:
-    print(f'Jogador: {a["Nome"]} e o seu dado: {a["Dado"]} ')
+temp = lista.copy()
+ranking = list()
+
+'''
+while temp:
+    primeiro_jogador = ''
+    maior_dado = 0
+
+    for a in lista:
+        if a["Dado"] > maior_dado:
+            primeiro_jogador = a["Nome"]
+            print(primeiro_jogador)
+            maior_dado = a["Dado"]
+    ranking.append((primeiro_jogador, maior_dado))
+    del temp[primeiro_jogador]
+    '''
+
+print(f'Jogador: {a["Nome"]} e o seu dado: {a["Dado"]} ')
+
 
 
