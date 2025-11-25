@@ -31,12 +31,14 @@ while True:
         pessoas["Nome"] = escape
         c_pessoas += 1
     pessoas["Genero"] = input('Qual o género da pessoa (M/F): ').capitalize()
+    if pessoas["Genero"] != 'M' and pessoas["Genero"] != 'F':
+        pessoas["Genero"] = input('Digite um género válido (M/F): ')
     if pessoas["Genero"] == 'F':
         c_mulheres += 1
     pessoas["Idade"] = int(input('Qual a idade: '))
     lista.append(pessoas)
 
-c = 0
+c = 0 #gambiarra festival 2025
 while c < c_pessoas:
     soma_idade = lista[c]["Idade"] + soma_idade
     c+=1
