@@ -3,13 +3,13 @@ def header(txt):
     print(f'{txt:-^30}')
     print('-'*30)
 
-def area(altura, largura):
+def area(altura: float, largura: float):
     largura = altura * largura
-    print(f'O terreno tem {largura}m de área')
+    print(f'O terreno tem {largura:.2f}m2 de área')
 
 #main
 
 header('Área de um terreno')
-altura = int(input('Digite a altura do terreno: '))
-largura = int(input('Digite a largura do terreno: '))
+altura = float(input('Digite a altura do terreno: '))
+largura = float(input('Digite a largura do terreno: '))
 area(altura, largura)

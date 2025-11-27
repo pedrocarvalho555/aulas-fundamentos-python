@@ -3,7 +3,7 @@ def header(txt):
     print(f'{txt:-^30}')
     print('-'*30)
 
-def tabuada(num):
+def tabuada(num: int):
     for c in range (1, 11):
         print(f'{num} x {c} = {num*c}')
 

@@ -3,7 +3,7 @@ def header(txt):
     print(f'{txt:-^30}')
     print('-'*30)
 
-def maior(lista):
+def maior(lista: list):
     maior = 0
     for valor in lista:
         if valor > maior:
