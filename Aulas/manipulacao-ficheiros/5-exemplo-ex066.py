@@ -51,9 +51,9 @@ def guarda(dados: dict) -> str:
     caminho = Path(rf'files/{dados["Nome"]}resultados.txt')
     with caminho.open('w', encoding='utf-8', errors='ignore') as file:
         for key, values in dados.items():
-            file.write(f'{key}: {value}\n')
+            file.write(f'{key}: {values}\n')
 
     return f'Resultado de {dados["Nome"]} guardado com sucesso.'
 
-print(guarda()) # tbd
 pessoa = calcula_informacao(busca_informacao())
+print(guarda(pessoa)) # tbd
