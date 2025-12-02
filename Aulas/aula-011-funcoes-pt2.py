@@ -4,7 +4,7 @@ def soma (n1: int, n2: int):
     return s
 
 resultado = soma(5, 5)
-print(f'O return é {resultado}')
+print(f'O return é {resultado}\n')
 
 def soma2 (lista: list):
     soma = 0

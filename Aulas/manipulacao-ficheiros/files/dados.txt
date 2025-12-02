@@ -1,0 +1,4 @@
+Nome: Pedro
+AnoNasc: 1996
+Rendimento: 4000
+Despesa: 2000
