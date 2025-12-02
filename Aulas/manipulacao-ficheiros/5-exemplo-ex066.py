@@ -47,6 +47,8 @@ def calcula_informacao(dados: dict) -> dict:
     print(f'Pagamento Mensal: {dados["PagamentoMensal"]}')
     print(f'O seu crédito encontra-se {dados["Aprovacao"]}')
 
+    return dados
+
 def guarda(dados: dict) -> str:
     caminho = Path(rf'files/{dados["Nome"]}resultados.txt')
     with caminho.open('w', encoding='utf-8', errors='ignore') as file:
@@ -56,4 +58,4 @@ def guarda(dados: dict) -> str:
     return f'Resultado de {dados["Nome"]} guardado com sucesso.'
 
 pessoa = calcula_informacao(busca_informacao())
-print(guarda(pessoa)) # tbd
+print(guarda(pessoa))

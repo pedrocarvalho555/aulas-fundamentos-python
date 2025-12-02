@@ -1,0 +1,10 @@
+Nome: Pedro
+AnoNasc: 1996
+Rendimento: 4000
+Despesa: 2000
+Idade: 29
+RendaLiquida: 2000.0
+Credito: 5000.0
+DuracaoCredito: 12
+PagamentoMensal: 416.6666666666667
+Aprovacao: Aprovado
