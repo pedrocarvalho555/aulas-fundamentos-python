@@ -77,12 +77,11 @@ def abrir_notas(nome_ficheiro: str):
             print(linha_limpa)
 
 def pesquisa_notas(nome_ficheiro: str, keyword: str):
-    '''
-
-    Pesquisa todo o conteudo dentro de um ficheiro .txt, caso a keyword exista numma linha
+    """
+    Pesquisa todo o conteudo dentro de um ficheiro .txt, caso a keyword exista numa linha
     print a linha toda
+    """
 
-    '''
     caminho = Path(rf'ficheiros/{nome_ficheiro}.txt')
     with caminho.open('r', encoding='utf-8', errors='ignore') as file:
         for linha_raw in file:
