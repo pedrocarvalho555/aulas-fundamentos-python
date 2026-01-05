@@ -18,12 +18,18 @@ def header(txt):
     print('-'*30)
 
 def fatorial(num: int, visibilidade: bool):
+    """
+    Calcula o fatorial de um número e guarda o resultado num ficheiro .txt
+    :param num: Número a ser utilizado para o cálculo
+    :param visibilidade: se True vai exibir o cálculo completo no ficheiro .txt, se false apresenta apenas o resultado
+    :return: null
+    """
     path = Path(rf'files/ex_078.txt')
     contagem = []
     if visibilidade:
         resultado = factorial(num)
-        for c in range (1, num+1, 1): #contagem crescente para adicionar o calculo numa lista
-            if c != num:
+        for c in range (num, 0, -1): #contagem crescente para adicionar o calculo numa lista
+            if c != 1:
                 contagem.append(f'{c} x ')
             else:
                 contagem.append(f'{c} = ') # quando chega ao final adiciona um igual
