@@ -1,9 +1,17 @@
+from ..calc import *
+
 def header (txt: str) -> None:
+    '''
+    Cabeçalho genérico que utilizo em literamente tudo que é lado
+    '''
     print('-'*30)
     print(f'{txt:-^30}')
     print('-'*30)
 
 def menu_calculadora() -> None:
+    '''
+    Menu da calculadora
+    '''
     header('CALCULADORA')
     print('[ 1 ] - Soma')
     print('[ 2 ] - Subtração')
@@ -14,17 +22,20 @@ def menu_calculadora() -> None:
 
     match option:
         case 1:
-            pass
+            soma()
         case 2:
-            pass
+            subtracao()
         case 3:
-            pass
+            multiplicacao()
         case 4:
-            pass
+            divisao()
         case 5:
             main_menu()
 
 def main_menu() -> None:
+    '''
+    Menu principal
+    '''
     while True:
         header('EXERCÍCIO 84')
         print('[ 1 ] - Calculadora')
@@ -38,19 +49,21 @@ def main_menu() -> None:
         match option:
             case 1:
                 header('CALCULADORA')
-                pass
+                menu_calculadora()
             case 2:
                 header('TABUADA')
-                pass
+                tabuada()
+
             case 3:
                 header('PAR OU ÍMPAR')
-                pass
+                par_impar()
+
             case 4:
                 header('NÚMEROS PRIMOS')
-                pass
+                primos()
             case 5:
                 header('FATORIAL')
-                pass
+                fatorial()
             case 6:
                 print('A sair...')
                 break
