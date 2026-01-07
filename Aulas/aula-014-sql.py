@@ -54,7 +54,7 @@ def consultar_tarefa():
 
     conn = conectar()
     cursor = conn.cursor()
-    conn.execute("SELECT * FROM tarefas")
+    cursor.execute("SELECT * FROM tarefas")
     tarefas = cursor.fetchall()
     conn.close()
 
@@ -62,6 +62,7 @@ def consultar_tarefa():
         print(f'ID: {tarefa[0]} | DESCRIÇÃO: {tarefa[1]} | ESTADO: {tarefa[2]}')
         print('---------------------------------------------------------------')
 
+    input()
 
 def terminar_tarefa():
     header('Terminar Tarefa')
