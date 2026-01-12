@@ -9,7 +9,7 @@ class Livro:
     def __init__(self, titulo, autor):
         self.titulo = titulo
         self.autor = autor
-        print(self.titulo, self.autor)
+        print(self.titulo, self.autor) # nao fazer assim
 
 
 livro1 = Livro('FansFans','Ricardo Mourão')
