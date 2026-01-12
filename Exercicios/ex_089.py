@@ -74,7 +74,7 @@ def editar_produto() -> None:
     novo_preco = float(input('Digite o novo preço do produto: '))
     novo_stock = int(input('Digite a nova quantia do produto: '))
 
-    conn.execute("UPDATE PRODUTOS SET nome = ?, preco = ?, stock = ? WHERE id = ?", (novo_nome, novo_preco, novo_stock, id))
+    cursor.execute("UPDATE PRODUTOS SET nome = ?, preco = ?, stock = ? WHERE id = ?", (novo_nome, novo_preco, novo_stock, id))
 
     conn.commit()
     conn.close()
